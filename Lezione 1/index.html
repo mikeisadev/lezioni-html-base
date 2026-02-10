@@ -1,0 +1,142 @@
+<!--
+ Questo è un commento in HTML.
+
+ posso usarlo sia per commenti a singola linea e sia per commenti multilinea.
+
+ "<!DOCTYPE html>" definisce il tipo di documento che in questo caso è di tipo HTML.
+
+ Nel linguaggio HTML l'elemento minimo è il tag, delimitato da parentesi angolari e il nome del tag stesso.
+
+ Quando scrivo un tag HTML vado a definire un contenitore al cui interno posso aggiungere altri elementi.
+
+ In una pagina HTML standard abbiamo, dentro i tag <html></html> i tag:
+ - <head></head> che definiscono la configurazione della pagina HTML stessa
+ - <body></body> al cui interno realizzo la struttura stessa della pagina
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- In HTML indico con i tag H1 un titolo primario e di grandi dimensioni -->
+        <h1>H1 titolo di primo livello</h1>
+        <h2>H2 titolo di secondo livello</h2>
+        <h3>H3 titolo di terzo livello</h3>
+        <h4>H4 titolo di quarto livello</h4>
+        <h5>H5 titolo di quinto livello</h5>
+        <h6>H6 titolo di sesto livello</h6>
+
+        <!-- Elemento / tag paragrafo -->
+        <p>Questo è un elemento paragrafo</p>
+
+        <!-- Tag: b, strong, em, u -->
+        <p>Questo è un paragrafo in <b>grassetto</b></p>
+        <p>Questo è un altro <strong>paragrafo in grassetto</strong></p>
+
+        <p><em>Questo paragrafo è in italic</em></p>
+
+        <p><u>Paragrafo sottolineato</u></p>
+
+        <!--
+            In HTML è importante conoscere il tag: <a></a>
+
+            Questo tag mi consente di aggiungere un link alla mia pagina
+
+            Aspetti da tenere in considerazione:
+            - inserisco il link nell'attributo "href"
+            - posso modificare il comportamento del tag <a></a> con l'attributo target.
+
+            Infatti, se dentro l'attributo "target" scrivo "blank" il link indicato in "href" verrà
+            aperto in un nuovo tab del browser.
+        -->
+        <a href="https://michelemincone.com" target="_blank">Visita il mio sito</a>
+
+        <!--
+            Realizziamo una tabella HTML
+        -->
+        <h2>Questa è una tabella HTML</h2>
+        <table>
+
+            <!-- 1. Definisco la testata della tabella con <thead> -->
+            <thead>
+                <tr> <!-- <tr> è una riga -->
+                    <th scope="col">Nome</th>  <!-- <th> è una colonna -->
+                    <th scope="col">Cognome</th>
+                    <th scope="col">Data di nascita</th>
+                </tr>
+            </thead>
+
+            <!-- 2. Definisco il corpo della tabella con <tbody> -->
+            <tbody>
+
+                <!-- Questa è una singola riga (pensala come una singola riga di un file excel) -->
+                <tr> <!-- <tr è una riga -->
+                    <td>Michele</td>
+                    <td>Mincone</td>
+                    <td>19/09/2002</td>
+                </tr>
+
+                <tr> <!-- <tr è una riga -->
+                    <td>Francesco</td>
+                    <td>Mincone</td>
+                    <td>6/02/1997</td>
+                </tr>
+
+            </tbody>
+
+        </table> <!-- ATTENZIONE FINE TABELLA -->
+
+        <!--
+            Inserisco un'immagine in HTML
+
+            COME FARE: per inserire un'immagine uso il tag <img />
+
+            NOTA: è sbagliato scrivere <img></img>, questo perché
+            in HTML il tag immagine si chiuse su se stesso in questo
+            modo <img />.
+
+            Questo è chiamato anche self-closing tag, proprio perché
+            non ha un elemento di apertura e uno di chiusura come
+            la maggior parte dei tag HTML
+        -->
+        <h2>Questa è un'immagine</h2>
+        <img
+                src="assets/images/html.jpg"
+                width="320px"
+                height="auto"
+        />
+
+        <!--
+            Realizzo una lista in HTML usando due tag:
+            - <ul></ul> come contenitore principalew
+            - <li><li> come elementi singoli della lista
+
+            <ul> come acronimo sta per "unordered list" o lista
+            disordinata
+        -->
+        <h2>Questa è una lista NON ordinata - tag ul</h2>
+        <ul> <!-- Contenitore principale della lista -->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+
+        <!--
+            Per fare una lista ordinata uso il tag <ol></ol>
+
+            <ol> sta per "ordered list" oppure lista ordinata
+         -->
+        <h2>Questa è una lista ordinata - tag ol</h2>
+        <ol> <!-- Contenitore principale della lista -->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+
+        <!-- Con l'elemento <button> realizzo un pulsante -->
+        <h2>Pulsante in HTML</h2>
+        <button>Questo è un pulsante</button>
+    </body>
+</html>
