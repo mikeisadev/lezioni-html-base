@@ -1,0 +1,54 @@
+/* Stile css usato per il box model */
+.css-esempio-boxmodel {
+    font-size: 28px;  /* Con font-size definisco la grandezza dei caratteri */
+
+    padding: 40px; /* Modifica l'imbottitura visibile nel box model */
+
+    border: 10px dashed black; /* Aggiunge un bordo */
+
+    margin: 40px; /* Aggiunge margine */
+
+    /* Aggiungo ombra al mio box */
+    box-shadow:  20px -19px 6px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Applichiamo un'ombra su un testo */
+.css-esempio-boxmodel h1 {
+
+    color: coral;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+/* Stile css usato per usare parametri diversi su margini e imbottiture */
+.parametri-diversi {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 5px;
+    padding-bottom: 35px;
+
+    border: 5px solid blue;
+    border-radius: 100px;
+
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 400px;
+    margin-bottom: 6.7px;
+}
+
+/* Proviamo a disegnare un cerchio */
+.cerchio {
+    border: 1px solid green;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    margin-top: 50px;
+    margin-left: 50px;
+}
