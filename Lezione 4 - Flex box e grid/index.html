@@ -8,41 +8,39 @@
         <link rel="stylesheet" href="assets/css/style.css" >
     </head>
     <body>
-
         <!--
-            [ CONCETTO ] - BOX MODEL
+            FLEXBOX
 
-            Il box model è un contenitore che avvolge ogni elemento HTML e consiste
-            nei seguenti componenti:
-            - contenuto o "content" (l'immagine, il titolo, il paragrafo, l'icona, i video)
-            - imbottitura o "padding" (lo spazio, che posso definire tramite CSS, che si trova tra il contenuto e il bordo)
-            - bordo o "border" (è l'elemento, anch'esso manipolabile nel codice CSS, posto tra padding e margin)
-            - margine o "margin" (lo spazio fuori dal bordo per definire una certa distanza dagli altri elementi, manibolabile nel CSS)
-
-            L'imbottitura (padding) e il margine (margin) sono trasparenti e rappresentano uno spazio in pixel.
-
-            Il contenuto è la risorsa che vado a mostrare e che può essere un testo, un'immagine, un video, un'icona ecc.
-
-            Del contenuto posso cambiare la grandezza se è un testo (font-size) o le dimensioni se è un'immagine (width/height)
-
-            Il bordo è visibile e posso definire il suo spessore (in pixel), il suo stile (solido, tratteggiato ecc.) e il suo colore.
-
-            In ambito lavorativo, si parla di BOX MODEL quando facciamo riferimento
-            a concetti di web design, layout e dell'organizzazione degli elementi HTML.
-
-            RICORDA: Il box model è visibile all'interno dell'ispeziona elemento del browser (DevTools)
-
-            Link approfondimento "BOX MODEL": https://www.w3schools.com/css/css_boxmodel.asp
+            La flexbox è uno strumento CSS molto potente per organizzare
+            elementi HTML in una pagina web.
         -->
-        <div class="css-esempio-boxmodel">
-            <h1>Sono un titolo (box model)</h1>
+        <div class="struttura">
+
+            <div class="contenitore">
+                <h2>Libro 1</h2>
+                <p>Descrizione libro 1</p>
+            </div>
+
+            <div class="contenitore">
+                <h2>Libro 2</h2>
+                <p>Descrizione libro 2</p>
+            </div>
+
+            <div class="contenitore">
+                <h2>Libro 3</h2>
+                <p>Descrizione libro 3</p>
+            </div>
+
+            <div class="contenitore">
+                <h2>Libro 4</h2>
+                <p>Descrizione libro 4</p>
+            </div>
+
+            <div class="contenitore">
+                <h2>Libro 5</h2>
+                <p>Descrizione libro 5</p>
+            </div>
+
         </div>
-
-        <div class="parametri-diversi">
-            <h1>Contenitore con parametri differenti</h1>
-        </div>
-
-        <div class="cerchio"></div>
-
     </body>
 </html>
