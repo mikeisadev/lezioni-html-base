@@ -9,22 +9,59 @@
 
  Quando scrivo un tag HTML vado a definire un contenitore al cui interno posso aggiungere altri elementi.
 
- In una pagina HTML standard abbiamo, dentro i tag <html></html> i tag:
+ In una pagina HTML standard abbiamo, dentro i tag <html></html> altri tag:
  - <head></head> che definiscono la configurazione della pagina HTML stessa
  - <body></body> al cui interno realizzo la struttura stessa della pagina
+
+ In HTML i tag non sono tutti uguali, infatti esistono tag HTML che si aprono e che si chiudono. Invece,
+ esistono poi tag che si chiudono su se stessi.
+
+ - I tag HTML che si "aprono e che si chiudono" definiscono un contenitore all'interno del quale
+   posso inserire altri elementi HTML. I tag di questo tipo si aprono con <nomeTag> e poi vengono
+   chiusi con il corrispettivo tag che include lo slash "/" </nomeTag>. ESEMPI: <html></html>, <h1></h1>, <p></p>
+ - I tag HTML che si chiusono su se stessi (detti anche TAG HTML self-closing o auto-closing) non hanno
+   un apertura e una chiusura ma vengono definiti e delimitati nelle stesse parentesi angolari. ESEMPIO:
+   <link>, <img>, <meta>, <br>
+
+ NOTA: Entrambe le categorie di tag HTML supportano gli attributi.
+
+ Non posso tenere a mente tutti gli attributi di ogni singolo tag HTML. I tag HTML possono avere
+ molti attributi e anche attributi specifici, quindi consulterò sempre la documentazione.
+
+ NOTA: tenendo il mouse su un tag HTML quando sono dentro IntelliJ (o altro IDE tipo VSCODE) posso
+ vedere la documentazione di quel tag in modo sintetico.
 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Qui definisco le impostazioni / configurazioni della pagina HTML -->
+
+        <!-- Questo tag definisce la codifica dei caratteri -->
         <meta charset="UTF-8">
-        <title>Title</title>
+
+        <!--
+            Il tag title definisce il titolo della pagina
+
+            Questo tag viene letto dal browser e viene inserito come
+            titolo nel tab.
+
+            I motori di ricerca tengono molto in considerazione questo
+            elemento per capire l'argomento della pagina e dargli un
+            determinato peso e valore rispetto alle altre pagine.
+         -->
+        <title>La mia prima pagina HTML</title>
+
+        <!-- Con il tag "link" posso inserire la favicon (o icona) del sito -->
+        <link rel="icon" href="assets/favicon/html5_icona.png">
     </head>
     <body>
+        <!-- Dentro il tag body cotruisco la pagina -->
+
         <!-- In HTML indico con i tag H1 un titolo primario e di grandi dimensioni -->
         <h1>H1 titolo di primo livello</h1>
         <h2>H2 titolo di secondo livello</h2>
         <h3>H3 titolo di terzo livello</h3>
-        <h4>H4 titolo di quarto livello</h4>
+        <h4>H4 ti tolo di quarto livello</h4>
         <h5>H5 titolo di quinto livello</h5>
         <h6>H6 titolo di sesto livello</h6>
 
@@ -106,7 +143,7 @@
                 src="assets/images/html.jpg"
                 width="320px"
                 height="auto"
-        />
+        >
 
         <!--
             Realizzo una lista in HTML usando due tag:
