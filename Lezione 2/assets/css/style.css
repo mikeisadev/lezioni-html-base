@@ -1,0 +1,59 @@
+/*
+  Questo è un commento CSS.
+
+  Uso i commenti per descrivere cosa fa una regola
+  CSS.
+*/
+
+/* Questo è lo stile usato per i contenitori */
+.contenitore-titolo {
+    width: 200px;
+    height: auto;
+    background-color: lightblue;
+}
+
+.contenitore-immagine {
+    background-color: lightgreen;
+    width: 100%;
+    height: auto;
+}
+
+.contenitore-azione {
+    background-color: gray;
+    height: 80px;
+}
+
+/*
+    Stile CSS per i pulsanti
+
+    NOTA BENE: qui uso il cancelletto "#" per aggiungere
+    stili CSS facendo riferimento a ID presenti su
+    elementi HTML (vedi index.html per capire meglio)
+ */
+#btn-scopri-titoli {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+#btn-ordina-libro {
+    background-color: green;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid white;
+    margin: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+#btn-pubblica-libro {
+    background-color: lightblue;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid white;
+    margin: 10px;
+    color: black;
+    font-weight: 600;
+}

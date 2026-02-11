@@ -38,23 +38,6 @@ sono elementi che si affiancano ad altri elementi inline.
             nel documento HTML. Il risultato sarà un codice molto più organizzato, gestibile e chiaro.
          -->
         <style>
-            .contenitore-titolo {
-                width: 200px;
-                height: auto;
-                background-color: lightblue;
-            }
-
-            .contenitore-immagine {
-                background-color: lightgreen;
-                width: 100%;
-                height: auto;
-            }
-
-            .contenitore-azione {
-                background-color: gray;
-                height: 80px;
-            }
-
             h1 {
                 text-decoration: underline;
             }
@@ -64,6 +47,13 @@ sono elementi che si affiancano ad altri elementi inline.
                 font-size: 24px;
             }
         </style>
+
+        <!--
+            INSERIAMO UN FILE CSS ESTERNO
+
+            Per collegare un file CSS esterno mi avvalgo del tag HTML <link>
+        -->
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
 
@@ -122,9 +112,9 @@ sono elementi che si affiancano ad altri elementi inline.
         </div>
 
         <div class="contenitore-azione">
-            <button>Scopri altri titoli</button>
-            <button>Ordina un libro</button>
-            <button>Pubblica un libro</button>
+            <button id="btn-scopri-titoli">Scopri altri titoli</button>
+            <button id="btn-ordina-libro">Ordina un libro</button>
+            <button id="btn-pubblica-libro">Pubblica un libro</button>
         </div>
 
     </body>
