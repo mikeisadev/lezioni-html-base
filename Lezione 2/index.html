@@ -13,7 +13,7 @@ Il comportamento "block" è definito dalla proprietà CSS
 "display". Quindi è la regola "display: block;" a definire
 il comportamento del contenitore DIV.
 
-Altri elementi HTML come: span, a, img, button ecc. sono
+Altri elementi HTML come: span, a, img, button, i ecc. sono
 elementi di tipo "inline", quindi sono elementi che non
 vanno a prendere tutta la larghezza orizzontale, quindi
 sono elementi che si affiancano ad altri elementi inline.
@@ -44,7 +44,7 @@ sono elementi che si affiancano ad altri elementi inline.
 
             p {
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
             }
         </style>
 
@@ -101,6 +101,16 @@ sono elementi che si affiancano ad altri elementi inline.
             >
         </div>
 
+        <!--
+            DISTINZIONE TRA CLASS E ID
+
+            "class" e "id" sono attributi globali per tag HTML. Questo significa che posso mettere "class" e "id" su
+            tutti gli elementi HTML.
+
+            Ma c'è una distinzione da fare:
+            - posso usare lo stesso valore di "class" su molteplici elementi HTML, quindi è riusabile
+            - il valore di un "id" è unico per elemento, quindi NON è duplicabile o riusabile
+        -->
         <div class="contenitore-titolo">
             <h1>Titolo libro 1</h1>
             <p>Descrizione libro 1</p>
