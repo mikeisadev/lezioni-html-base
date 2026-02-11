@@ -1,3 +1,24 @@
+<!--
+
+INTRODUZIONE ALL'ELEMENTO DIV.
+
+In HTML l'elemento DIV è un contenitore che contiene
+altri elementi HTML.
+
+L'elemento DIV si comporta come elemento "block", quindi
+come elemento che prende tutto lo spazio della pagina in larghezza
+mandando a capo tutti gli altri elementi.
+
+Il comportamento "block" è definito dalla proprietà CSS
+"display". Quindi è la regola "display: block;" a definire
+il comportamento del contenitore DIV.
+
+Altri elementi HTML come: span, a, img, button ecc. sono
+elementi di tipo "inline", quindi sono elementi che non
+vanno a prendere tutta la larghezza orizzontale, quindi
+sono elementi che si affiancano ad altri elementi inline.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,6 +27,43 @@
         <title>Lezione 2 HTML - contenitori e CSS</title>
 
         <link rel="icon" href="assets/favicon/html5_icona.png">
+
+        <!--
+            CODICE "CSS INCORPORATO"
+
+            Posso scrivere codice CSS nel tag <style></style>
+
+            NOTA: il codice CSS può diventare veramente molto lungo, quindi preferisco
+            scrivere lo stile in un file separato, evitando di creare confusione
+            nel documento HTML. Il risultato sarà un codice molto più organizzato, gestibile e chiaro.
+         -->
+        <style>
+            .contenitore-titolo {
+                width: 200px;
+                height: auto;
+                background-color: lightblue;
+            }
+
+            .contenitore-immagine {
+                background-color: lightgreen;
+                width: 100%;
+                height: auto;
+            }
+
+            .contenitore-azione {
+                background-color: gray;
+                height: 80px;
+            }
+
+            h1 {
+                text-decoration: underline;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 24px;
+            }
+        </style>
     </head>
     <body>
 
@@ -15,17 +73,58 @@
 
             Utilizzo il contenitore DIV per dare un senso
             e organizzazione alla mia pagina HTML
+
+            COME AGGIUNGERE STILE E COLORI a un ELEMENTO
+            HTML.
+
+            Se HTML definisce la struttura della pagina, con
+            CSS definisco lo stile.
+
+            Prima realizzo la struttura, quindi scrivo prima il
+            codice HTML, successivamente vado ad aggiungere
+            tutto il codice CSS che mi serve.
+
+            Il codice CSS lo posso aggiungere in tre modi differenti:
+            - metodo "inline", detto anche css inline: vado a incorporare il CSS dentro il tag HTML tramite l'attributo "style" (ESEMPIO: vedi codice HTML qui sotto)
+            - metodo "incorporato": consiste nella scrittura di codice CSS all'interno dei tag <style></style>
+            - metodo "esterno": consiste nel richiamare un file "css" esterno tramite tag html <link>
+
+            Quando vado ad aggiungere stile a una pagina HTML finirò per scrivere molto codice CSS. Quindi
+            il metodo "css inline" risulta scomodo in un'ottica di gestione e leggibilità.
+
+            Esistono metodi migliori per la gestione del codice CSS che sono quello "incorporato" e "esterno".
         -->
-        <div style="background-color: red;">
+        <div style="background-color: red;"> <!-- Esempio di codice CSS inline nell'attributo STYLE -->
             <h1 style="font-size: 60px;">Titolo</h1>
             <p style="font-size: 30px;">Paragrafo</p>
         </div>
 
-        <div>
+        <div class="contenitore-immagine">
             <img
                     src="assets/images/html.jpg"
-                    style="width: 400px;"
+                    style="width: 300px;"
             >
+
+            <img
+                    src="assets/images/css.png"
+                    style="width: 300px;"
+            >
+        </div>
+
+        <div class="contenitore-titolo">
+            <h1>Titolo libro 1</h1>
+            <p>Descrizione libro 1</p>
+        </div>
+
+        <div class="contenitore-titolo">
+            <h1>Titolo libro 2</h1>
+            <p>Descrizione libro 2</p>
+        </div>
+
+        <div class="contenitore-azione">
+            <button>Scopri altri titoli</button>
+            <button>Ordina un libro</button>
+            <button>Pubblica un libro</button>
         </div>
 
     </body>
