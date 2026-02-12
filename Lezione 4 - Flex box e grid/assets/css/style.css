@@ -1,8 +1,37 @@
+/*
+    Il reset CSS è una configurazione che applico per resettare
+    tutti i parametri CSS che il browser applica di default.
+
+    Esempi di parametri applicati dal browser di default: margini sulla pagina,
+    margini sui titoli, padding (imbottitura) che si somma alla larghezza ecc. ecc.
+
+    NOTA: Bootstrap, Tailwind e altre librerie CSS applicano il reset
+    CSS di default. Questo lo fanno per un motivo di compatibilità con 
+    tutti i dispositivi e per evitare che la larghezza della pagina HTML
+    vada oltre la larghezza dello schermo del dispositivo.
+
+    NOTA: il reset CSS rende la pagina web compatibile con la larghezza
+    del dispositivo addattando le imbottiture, 
+    ma non è l'unica regola da seguire e non è sufficiente per rendere
+    una pagina web responsive (*1).
+
+    RISORSA: Apri questo link se hai bisogno di un reset CSS
+    avanzato e moderno. Scorri un po' la pagina e fai copia e
+    incolla del reset: https://www.joshwcomeau.com/css/custom-css-reset/
+    
+    *1 RESPONSIVE: cosa significa questo termine? Responsive è un attributo
+    che diamo alle pagine web per dire che queste si adattano a tutti i dispositivi,
+    in particolar modo a quelli mobile (tablet, smartphone). Il reset CSS
+    è UNO dei passi per conformarmi a questa compatibilità.
+
+    Il secondo passo per rendere una pagina HTML responsive è la configurazione
+    della VIEWPORT.
+*/
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} /* Questo è un esempio di RESET CSS base */
 
 /* ---------------------------------------
     ESEMPIO FLEX
