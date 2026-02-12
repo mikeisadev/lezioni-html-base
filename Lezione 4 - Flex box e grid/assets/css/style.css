@@ -37,6 +37,8 @@
 .contenitore-inline-flex {
     display: inline-flex;
 
+    gap: 10px;
+
     background:lightblue;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -61,6 +63,34 @@
 
     padding: 10px;
     background: lightblue;
+}
+
+/* ALTRI ESEMPI CON GRID */
+.contenitore-grid-altro {
+    display: grid;
+
+    grid-template-columns: 200px auto 50px;
+    /* grid-template-columns: auto auto; */
+
+    /* grid-template-rows: 80px 80px 80px 80px; */
+    grid-auto-rows: 90px;
+
+    /* allineamenti */
+    justify-content: space-between;
+    align-content: end;
+
+    height: 600px;
+
+    gap: 10px;
+
+    padding: 10px;
+    background: lightblue;
+}
+
+/* Con questa regola vado a centrare gli elementi CHILD del
+contenitore griglia */
+.contenitore-grid-altro .contenitore {
+    align-content: center;
 }
 
 /* ---------------------------------------
