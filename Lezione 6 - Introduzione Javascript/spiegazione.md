@@ -73,3 +73,12 @@ Per ora, memorizza quelli base:
 - `console.log("Testo di esempio")` viene usato per mostrare in console dei log di informazioni utili allo sviluppo o al debugging
 - `alert("Avviso dato da Javascript")` questo comando genera un popup con un avviso direttamente nella finestra del tuo browser 
 - `prompt("Dimmi la tua età:")` è un comando molto utile per chiedere dati all'utente che dovrà usare il vostro sito. Questa funzione farà apparire un popup dentro il browser, chiedendo all'utente di inserire un input dentro un campo di testo.
+
+## Quindi, come scrivo codice Javascript nel frontend?
+
+Per scrivere codice Javascript, prima di tutto realizzo una pagina HTML: es. index.html.
+
+A questo punto punto posso includere codice Javascript in due modi:
+
+- metodo interno scrivendo codice nel tag HTML <script></script>
+- metodo esterno, linkando un file (es. "script.js") sempre tramite il tag <script></script> tramite l'attributo "src" (che sta per "source", dall'inglese)
