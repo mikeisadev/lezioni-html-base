@@ -1,0 +1,36 @@
+.pulsanti-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pulsanti-grid {
+    display: grid;
+
+    grid-template-columns: auto auto;
+
+    gap: 10px;
+}
+
+/*
+    ATTENZIONE. 
+
+    La proprietà display:inline-flex non estende il contenitore
+    a tutta la pagina, come invece fa display:flex.
+
+    Quindi per rendere justify-content: center; efficace devo
+    scrivere width: 100% per fare in modo che il contenitore
+    (sul quale applichiamo inline-flex) occupi prima tutta
+    la larghezza.
+*/
+.pulsanti-inline-flex {
+    display: inline-flex;
+    gap: 10px;
+
+    justify-content: center;
+    width: 100%;
+}
+
+.spaziatura {
+    padding: 20px 10px;
+}

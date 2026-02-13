@@ -31,7 +31,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} /* Questo è un esempio di RESET CSS base */
+}
+/* Questo in alto è un esempio di RESET CSS base */
 
 /* ---------------------------------------
     ESEMPIO FLEX
@@ -43,12 +44,12 @@
     flex-direction: row;
 
     justify-content: center;
-    align-items: end;
+    align-items: center;
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
 
-    gap: 8px;
+    gap: 5px;
 
     height: 500px;
 
@@ -57,6 +58,12 @@
     padding-bottom: 10px;
     padding-left: 12px;
     padding-right: 12px;
+
+    /* overflow: scroll; */ /* Prova tu stesso a usare flex con tanti elementi e vedi cosa succede */
+}
+
+.struttura .contenitore {
+    padding: 60px;
 }
 
 /* ---------------------------------------
@@ -82,13 +89,21 @@
 .contenitore-grid {
     display: grid;
 
-    grid-template-columns: 3fr 1fr 1fr 2fr;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    /* grid-template-rows: 100px 200px; */
+    grid-auto-rows: 100px;
+
+    /* grid-template-columns: 3fr 1fr 1fr 2fr;
+    grid-template-rows: 200px 200px; */
 
     /* grid-template-columns: auto auto; */
     /* grid-template-rows: 400px 100px 30px; */
 
     gap: 10px;
+
+    /* column-gap: 20px;
+    row-gap: 30px; */
 
     padding: 10px;
     background: lightblue;
@@ -105,8 +120,11 @@
     grid-auto-rows: 90px;
 
     /* allineamenti */
-    justify-content: space-between;
-    align-content: end;
+    /* justify-content: space-between;
+    align-content: end; */
+
+    justify-content: center;
+    align-content: center;
 
     height: 600px;
 
@@ -139,6 +157,25 @@ contenitore griglia */
 
     padding: 10px;
     background: lightblue;
+}
+
+/*
+    CONTENITORE PER CAPIRE RESET CSS
+
+    NOTA: prova a disattivare il reset css all'inizio di questo file
+    e vedi come si comporta l'elemento DIV con questa class sul
+    browser
+*/
+.contenitore-per-reset {
+    background-color: lightblue;
+
+    width: 100%;
+    height: 100px;
+
+    padding: 40px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 /* stile per il contenitore */
