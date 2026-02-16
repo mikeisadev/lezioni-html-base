@@ -26,8 +26,8 @@ Rispetto ad HTML e CSS, Javascript è un vero e proprio linguaggio di programmaz
 
 - creazione di variabili (in JS uso var, let e const per le variabili)
     - "var" è ormai obsoleto e non più usato
-    - "let" è molto utilizzato ed è stato introdotto con la versione Javascript ES5, dichiarando una variabile con "let" posso cambiare il suo contenuto
-    - "const", anch'esso introdotto nella versione Javascript ES5, mi consente di dichiarare una COSTANTE, quindi il suo valore non può essere cambiato
+    - "let" è molto utilizzato ed è stato introdotto con la versione Javascript ES6 (ES2015), dichiarando una variabile con "let" posso cambiare il suo contenuto
+    - "const", anch'esso introdotto nella versione Javascript ES6 (ES2015), mi consente di dichiarare una COSTANTE, quindi il suo valore non può essere cambiato
 - posso definire vari *tipi di dati* dentro le variabili (interi, decimali, booleani, stringhe, valori null, array, oggetti o object)
 - posso utilizzare strutture dati complesse sfruttando gli array e gli oggetti
 - abbiamo le strutture di controllo condizionali (if, if-else, if-elseif, switch) e iterative (for, forEach, while)
@@ -64,6 +64,8 @@ Ecco un'immagine esplicativa delle varie versioni di Javascript.
 
 ![Versioni di javascript](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230302180217/JavaScript-Versions.png)
 
+[Approfondimento sulle versioni di Javascript](https://www.w3schools.com/js/js_versions.asp)
+
 ## Comandi base di Javascript
 
 Javascript, da come avrai capito, ha tantissimi comandi diversi.
@@ -80,5 +82,20 @@ Per scrivere codice Javascript, prima di tutto realizzo una pagina HTML: es. ind
 
 A questo punto punto posso includere codice Javascript in due modi:
 
-- metodo interno scrivendo codice nel tag HTML <script></script>
-- metodo esterno, linkando un file (es. "script.js") sempre tramite il tag <script></script> tramite l'attributo "src" (che sta per "source", dall'inglese)
+- metodo interno scrivendo codice nel tag HTML `<script></script>`
+- metodo esterno, linkando un file (es. "script.js") sempre tramite il tag `<script></script>` tramite l'attributo "src" (che sta per "source", dall'inglese)
+
+## Argomenti base di Javascript
+
+- Variabili con "var" vs "let" e "const"
+- array 
+- oggetti
+- funzioni
+
+## Node più nel dettaglio
+
+Proviamo a usare Node.js come esecutore di codice Javascript.
+
+- eseguire codice javascript nella console di Node (entrare nella REPL tramite comando `node`)
+- eseguire un file javascript tramite node con il comando `node nomefile.js`
+

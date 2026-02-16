@@ -16,11 +16,71 @@
          * Questo è un commento multilinea in Javascript
          */
 
-        // Possiamo utilizzare "var" per dichiarare una variabile
-        // ATTENZIONE: var è ormai vecchio e inutilizzato
+        /**
+         * Possiamo utilizzare "var" per dichiarare una variabile seguendo questa espressione:
+         * 
+         * var nomeVariabile = "contenuto variabile";
+         * 
+         * "=" è un operatore di assegnazione
+         * 
+         * ATTENZIONE: var è ormai vecchio e inutilizzato 
+         */
         var nome = "Michele";
 
         console.log(nome);
+
+        nome = "Alessandro"; // Attenzione riassegno il valore alla variabile!
+
+        console.log(nome);
+
+        /**
+         * Qui sotto sono stati utilizzati gli altri metodi
+         * di "console".
+         * 
+         * Prova ad aprire questa pagina sul browser e visualizza
+         * i risultati nella console
+         */
+
+        console.info("Questa è una informazione da Javascript. Ti informiamo che stiamo finendo di sviluppare qeusta app.");
+
+        console.warn("ATTENTO, la versione di javascript sul tuo browser è obsoleta");
+
+        console.error("Errore questo programma contiene bug critici");
+
+        console.table(
+            ["Michele", "Alessandro", "Francesco"]
+        );
+
+        /**
+         * ALERT.
+         * 
+         * Metodo implementato dentro Javascript per mostrare un
+         * avviso all'interno del browser / pagina HTML.
+         * 
+         * Alert è una funzione bloccante, perché finchè non confermo
+         * il popup generato la pagina continua a caricare.
+         */
+        // alert("Hey, ciao! Sono un alert \n" + "sono stato aggiunto da " + nome + "!");
+
+        /**
+         * PROMPT
+         * 
+         * Prompt lo uso per richiedere un input specifico da un
+         * utente.
+         * 
+         * La funzione prompt() ritorna una stringa di testo che
+         * posso conservare in una variabile.
+         * 
+         * Anche prompt() è una funzione bloccante, quindi finché
+         * non annullo l'inserimento o finché non inserisco un valore,
+         * il popup bloccerà l'utilizzo della pagina mettendo in costante
+         * caricamento la pagina stessa.
+         */
+        var nomePrompt = prompt("Inserisci il tuo nome: ");
+        var cognomePrompt = prompt("Inserisci il tuo cognome: ");
+
+        console.log("Nome inserito: ", nomePrompt);
+        console.log("Cognome inserito: ", cognomePrompt);
     </script>
 </body>
 </html>
