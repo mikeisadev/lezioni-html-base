@@ -74,7 +74,6 @@ if (true) {
 
 console.log("[DIMOSTRAZIONE GLOBAL-SCOPE VAR]", varVariabile);
 
-
 /**
  * Le variabili con VAR subiscono HOISTING.
  * 
@@ -94,3 +93,25 @@ console.log("[HOISTING VAR - UNDEFINED = INIZIALIZZATO]", variabileVar);
 var variabileVar = "ciao";
 
 console.log("[VAR CON VALORE ASSEGNATO]", variabileVar);
+
+/**
+ * Spiegazione BONUS:
+ * 
+ * CONCETTO DI HOISTING per VAR
+ * 
+ * Le variabili dichiarate con VAR vengono richiamate tutte 
+ * all'inizio dell'esecuzione del programma e avviate come riferimenti
+ * in memoria. Quindi posso fare il "console.log" prima di una variabile "var"
+ * ottenendo "undefined" ma non un "reference error".
+ * 
+ * Il valore delle variabili var viene assegnato nell'esatta riga
+ * dove viene espressa. Dopo quella riga, facendo il console.log, ottengo
+ * il valore assegnato.
+ * 
+ * Riepilogo "hoisting":
+ * 
+ * - Con var, la dichiarazione viene “alzata” (hoisted) all’inizio dello scope globale.
+ * - Questo significa che il nome della variabile esiste già prima della riga in cui la scrivi.
+ * - Però l’assegnazione (= "valore") avviene solo quando l’esecuzione arriva a quella riga.
+ * - Risultato: prima dell’assegnazione, la variabile vale undefined (non crasha).
+ */
