@@ -47,8 +47,25 @@
 
         console.error("Errore questo programma contiene bug critici");
 
+        /**
+         * CONSOLE.TABLE() è utile per mostrare valori inseriti
+         * in una tabella all'interno della console.
+         * 
+         * Nel primo esempio qui sotto vado a mostrare un array.
+         */
         console.table(
-            ["Michele", "Alessandro", "Francesco"]
+            ["Michele", "Alessandro", "Francesco", 200, 300, new Date()]
+        );
+
+        /**
+         * Qui sotto vado a mostrare un oggetto.
+         */
+        console.table(
+            {
+                nome: "Michele",
+                data: new Date(),
+                eta: 23
+            }
         );
 
         /**
@@ -76,11 +93,11 @@
          * il popup bloccerà l'utilizzo della pagina mettendo in costante
          * caricamento la pagina stessa.
          */
-        var nomePrompt = prompt("Inserisci il tuo nome: ");
-        var cognomePrompt = prompt("Inserisci il tuo cognome: ");
+        // var nomePrompt = prompt("Inserisci il tuo nome: ");
+        // var cognomePrompt = prompt("Inserisci il tuo cognome: ");
 
-        console.log("Nome inserito: ", nomePrompt);
-        console.log("Cognome inserito: ", cognomePrompt);
+        // console.log("Nome inserito: ", nomePrompt);
+        // console.log("Cognome inserito: ", cognomePrompt);
     </script>
 </body>
 </html>

@@ -7,7 +7,6 @@
  * LET e CONST sono block-scoped, rispondono bene ai meccanismi
  * asincroni di javascript e NON seguono le logiche dell'hoisting.
  */
-
 let eta = 23;
 
 // let eta = 50; // ERRORE: non posso ridichiarare una variabile con LET
@@ -34,7 +33,6 @@ console.log("Il mio cibo preferito è:", ciboPreferito);
  * 2) Le variabili con LET rispondono bene in caso di 
  * SINCRONISMO e ASINCRONISMO
  */
-
 console.log("FOR LOOP con var - SINCRONO");
 for (let i = 0; i <= 5; i++) {
     console.log(i);
@@ -72,3 +70,15 @@ if (true) { // block scope 1
 // console.log(attorePreferito); // ERRORE - Fuori dal block-scope
 
 // console.log(veicoloPreferito); // ERRORE - Fuori dal block-scope
+
+/**
+ * CONST è una COSTANTE
+ * 
+ * Uso const per valori che non posso riassegnare.
+ */
+
+const PI = 3.14;
+
+// PI = 5; // ERRORE NON POSSO RIASSEGNARE VALORI A UNA COSTANTE
+
+console.log(PI);
