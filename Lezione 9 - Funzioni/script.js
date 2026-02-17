@@ -208,8 +208,10 @@ console.log(funzioneDentroCostante(5, 4));
 /**
  * ARROW FUNCTION (FUNZIONI CON LA FRECCIA)
  * 
- * Le ARROW FUNCTION sono semplicemente delle funzioni anonime 
+ * DEFINIZIONE: Le ARROW FUNCTION sono semplicemente delle funzioni anonime 
  * con una sintassi più corta.
+ * 
+ * UTILIZZO: le arrow function sono usate nelle funzioni espressioni con CONST.
  * 
  * Esistono due sottotipi di ARROW FUNCTION:
  * - con le parentesi graffe: usate quando la funzione è su più righe
@@ -222,6 +224,8 @@ const esempioArrowFunction = (a, b) => {
 console.log('[ESEMPIO DI ARROW FUNCTION]');
 console.log(esempioArrowFunction);
 
+console.log(esempioArrowFunction(80, 90));
+
 /**
  * ESEMPIO DI ARROW FUNCTION A UNA RIGA.
  * 
@@ -233,6 +237,8 @@ const arrowFunctionUnaRiga = (a, b) => a / b;
 
 console.log('[ESEMPIO ARROW FUNCTION SINGOLA RIGA]');
 console.log(arrowFunctionUnaRiga);
+
+console.log(arrowFunctionUnaRiga(100, 2));
 
 /**
  * Le funzioni definite con "function" subiscono l'hoisting.
