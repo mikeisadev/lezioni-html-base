@@ -1,11 +1,4 @@
 /**
- * USCITA LUIGI MASSI ALLE 11:47
- * ENTRATA LUIGI MASSI 12:30
- * 
- * USCITA ELENA 15:17
- */
-
-/**
  * FUNZIONI JAVASCRIPT.
  * 
  * Possiamo immaginare una funzione come una fabbrica che prende in input delle
