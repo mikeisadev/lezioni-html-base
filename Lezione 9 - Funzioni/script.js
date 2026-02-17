@@ -167,6 +167,10 @@ console.log( sommaInfinita(70, 30, 23, 67, 1, 2, 3, 67) );
  * 
  * Definizione pratica: non è nient'altro che una funzione anonima
  * dentro una costante.
+ * 
+ * Quindi è corretto dire che tutte le FUNZIONI ESPRESSIONI sono
+ * di fatto ESPRESSIONI, dette anche STATEMENT in inglese. Ogni
+ * ESPRESSIONE o STATEMENT termina col ";"
  */
 
 /**
@@ -177,7 +181,7 @@ console.log( sommaInfinita(70, 30, 23, 67, 1, 2, 3, 67) );
  * non puoi riassegnare valori a una costante.
  */
 const pigreco = 3.14;
-const fattoreConversioneCelsiusFarenheit = 5/9
+const fattoreConversioneCelsiusFarenheit = 5/9;
 const IVA22 = 22;
 const IVA10 = 10;
 
@@ -194,12 +198,41 @@ const IVA10 = 10;
  */
 const funzioneDentroCostante = function(a, b) {
     return a * b;
-}
+};
 
 console.log('[ESEMPIO DI UNA FUNZIONE ESPRESSIONE]');
 console.log(funzioneDentroCostante);
 
 console.log(funzioneDentroCostante(5, 4));
+
+/**
+ * ARROW FUNCTION (FUNZIONI CON LA FRECCIA)
+ * 
+ * Le ARROW FUNCTION sono semplicemente delle funzioni anonime 
+ * con una sintassi più corta.
+ * 
+ * Esistono due sottotipi di ARROW FUNCTION:
+ * - con le parentesi graffe: usate quando la funzione è su più righe
+ * - senza parentesi graffe: usate quando la funzione è su una sola riga
+ */
+const esempioArrowFunction = (a, b) => {
+    return a * b;
+};
+
+console.log('[ESEMPIO DI ARROW FUNCTION]');
+console.log(esempioArrowFunction);
+
+/**
+ * ESEMPIO DI ARROW FUNCTION A UNA RIGA.
+ * 
+ * NOTA:
+ * - NON CI SONO PIù LE PARENTESI GRAFFE
+ * - L'ELEMENTO FRECCIA "=>" SIGNIFICA "return"
+ */
+const arrowFunctionUnaRiga = (a, b) => a / b;
+
+console.log('[ESEMPIO ARROW FUNCTION SINGOLA RIGA]');
+console.log(arrowFunctionUnaRiga);
 
 /**
  * Le funzioni definite con "function" subiscono l'hoisting.
