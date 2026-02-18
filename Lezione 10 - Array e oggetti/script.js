@@ -43,11 +43,18 @@ let array2 = [
 
 let arrayLineare = [0, 1, 2, 3, 4, 5];
 
+console.log("[CONSOLE TABLE DI UN ARRAY LINEARE]");
+console.table(arrayLineare);
+
 let array2D = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
+    [0, 1, 2, 3],
+    [4, 5, 6, 7],
+    [8, 9, 10, 11],
+    [2]
 ];
+
+console.log("[CONSOLE TABLE DI UN ARRAY 2D]");
+console.table(array2D);
 
 /**
  * Cubo 2 * 2 * 2
@@ -63,8 +70,15 @@ let array3D = [
     ],
 ];
 
+console.log("[CONSOLE TABLE DI UN ARRAY 3D]");
+console.table(array3D);
+
 /**
  * Accedere a un array.
+ * 
+ * In Javascript gli array sono indicizzati automaticamente a 0.
+ * 
+ * Quindi gli array in Javascript sono su base 0.
  */
 let macchine = ["BMW", "Audi", "Fiat", "Volvo", "Ford"];
 
@@ -161,22 +175,22 @@ let listaClienti = [
     {
         nome: "Francesco",
         totaleImportoPagato: 3000,
-        nazionalit: "Italiana"
+        nazionalita: "Italiana"
     },
     {
         nome: "Alessandro",
         totaleImportoPagato: 0,
-        nazionalit: "Italiana"
+        nazionalita: "Italiana"
     },
     {
         nome: "Natale",
         totaleImportoPagato: 7800,
-        nazionalit: "Italiana"
+        nazionalita: "Italiana"
     },
     {
         nome: "Gianluca",
         totaleImportoPagato: -20000,
-        nazionalit: "Italiana"
+        nazionalita: "Italiana"
     }
 ];
 

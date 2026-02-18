@@ -73,5 +73,7 @@ console.log(`
 
     a presto
 
-    Data odierna: ${(new Date()).getUTCDate()}/${(new Date()).getUTCMonth() + 1}/${(new Date()).getFullYear()}
+    Data odierna: ${(new Date()).getUTCDate()} / ${(new Date()).getUTCMonth() + 1} / ${(new Date()).getFullYear()}
+
+    Stampa oggetto data: ${new Date()}
 `);

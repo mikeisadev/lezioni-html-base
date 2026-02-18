@@ -152,7 +152,7 @@ console.log( sommaInfinita(70, 30, 23, 67, 1, 2, 3, 67) );
  * - funzioni variadiche                                [x]
  * - funzioni anonime                                   [x]
  * - funzioni espressioni (funzione dentro costante)    [x]
- * - arrow function                                     []
+ * - arrow function                                     [x]
  */
 
 /**
