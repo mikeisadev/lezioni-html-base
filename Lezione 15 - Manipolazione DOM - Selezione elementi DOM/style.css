@@ -1,0 +1,37 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+.square-other-color {
+    width: 200px;
+    height: 200px;
+
+    background-color: darkolivegreen;
+}
+
+#quadrato-unico {
+    width: 250px;
+    height: 250px;
+
+    background-color: brown;
+    border-radius: 12px;
+}
+
+.pulsante-autodisattivante {
+    margin-top: 20px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    color: white;
+    padding: 6px;
+}
+
+/*
+    proprietà CSS per targetizzare pulsanti disattivati
+ */
+button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+}
