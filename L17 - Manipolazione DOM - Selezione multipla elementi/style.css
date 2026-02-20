@@ -1,0 +1,20 @@
+#master-contenitore1,
+#master-contenitore2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenitore {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+.contenitore > .item {
+    background: rgb(190, 190, 190);
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+}
