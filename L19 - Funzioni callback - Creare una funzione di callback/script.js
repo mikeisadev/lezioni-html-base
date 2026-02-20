@@ -44,7 +44,7 @@ const risultato = sommaTraDueNumeri(10, 20, (n1, n2) => {
 console.log(risultato);
 
 // [FACOLTATIVO] VERSIONE SUPER-HARD (con cache)
-// SE VOGLIO ME LO STUDIO
+// SE VOGLIO ME LO STUDIO 
 const funzioneConCache = () => {
     let cache = {}; // cache - salvo i valori già calcolati per non ricalcolarli di nuovo
 
