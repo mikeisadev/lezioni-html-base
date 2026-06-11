@@ -1,0 +1,86 @@
+/* Qui abbiamo parlato di flex box */
+.contenitore-padre-1 {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    gap: 10px;
+
+    background-color: #d6d619;
+
+    padding: 10px;
+}
+
+.contenitore-padre-2 {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    background-color: #d6d619;
+    padding: 10px;
+}
+
+.contenitore-padre-3 {
+    display: flex;
+    padding: 10px;
+    background-color: #d6d619;
+    gap: 10px;
+    height: 180px;
+
+    align-items: center;
+}
+
+.distanziatore {
+    height: 30px;
+}
+
+.stile-box {
+    background-color:coral;
+    padding: 12px;
+    border: 2px solid black;
+}
+
+/* Vediamo esempi reali di flexbox */
+.layout-web {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-web .main {
+    display: flex;
+    height: 300px;
+    /* justify-content: space-between; */
+}
+
+.layout-web .header,
+.layout-web .main,
+.layout-web .footer {
+    background-color:aquamarine;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.layout-web .main .content,
+.layout-web .main .sidebar {
+    background-color: coral;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.layout-web .main .content {
+    width: 70%;
+}
+
+.layout-web .main .sidebar {
+    width: 30%;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
