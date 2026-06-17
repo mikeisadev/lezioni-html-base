@@ -1,5 +1,5 @@
 /**
- * Applicazione diretta di metodi e cicli sugli array
+ * Applicazione diretta dei principali metodi sugli array
  */
 
 const listaProdotti = ["mouse", "tastiera", "pc", 
