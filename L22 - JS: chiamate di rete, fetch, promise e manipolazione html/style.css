@@ -1,0 +1,17 @@
+.griglia-utenti {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.griglia-utenti .column {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.griglia-utenti .cell {
+    background-color: rgb(175, 175, 175);
+    padding: 10px;
+    border: 1px solid black;
+}
